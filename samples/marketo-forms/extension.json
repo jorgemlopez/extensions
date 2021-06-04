@@ -10,6 +10,12 @@
         "type": "Symbol",
         "name": "Lambda Function URL",
         "required": true
+      },
+      {
+        "id": "apiToken",
+        "type": "Symbol",
+        "name": "Lambda Function API Token",
+        "required": true
       }
     ]
   }
