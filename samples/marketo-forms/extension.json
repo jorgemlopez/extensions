@@ -1,5 +1,5 @@
 {
-  "name": "Marketo forms",
+  "name": "Marketo Forms",
   "id": "marketo-forms",
   "srcdoc": "./app.html",
   "fieldTypes": ["Object"],
@@ -12,9 +12,9 @@
         "required": true
       },
       {
-        "id": "apiToken",
+        "id": "apiKey",
         "type": "Symbol",
-        "name": "Lambda Function API Token",
+        "name": "Lambda Function API Key",
         "required": true
       }
     ]
