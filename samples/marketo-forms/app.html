@@ -30,6 +30,7 @@
         api.window.startAutoResizer();
         var value = api.field.getValue();
         var serviceUri = api.parameters.installation.serviceUri;
+        var apiKey = api.parameters.installation.apiKey;
         var selectField = $("#mkto-forms");
         var forms = [];
 
@@ -38,6 +39,9 @@
           type: "GET",
           crossDomain: true,
           dataType: "json",
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader('X-Api-Key', apiKey);
+          },
           success: function(response) {
             forms = response;
 
